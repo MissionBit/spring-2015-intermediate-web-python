@@ -89,19 +89,19 @@ A boolean is value that can be either true or false. You can use the words `True
 16 != 42
  => True
 
-"foo".length < 5
+len("foo") < 5
  => True
 
 #If both boolean values are true, the result is True.
-"foo".length < 5 and "foo" != "bad string"
+len("foo") < 5 and "foo" != "bad string"
  => True
-"foobar".length < 5 and "foobar" != "bad string"
+len("foobar") < 5 and "foobar" != "bad string"
  => False
 
 #If either boolean value is true, the result is True.
-"foobar".length < 5 || "foobar" != "bad string"
+len("foobar") < 5 || "foobar" != "bad string"
  => True
-"bad string".length < 5 || "bad string" != "bad string"
+len("bad string") < 5 || "bad string" != "bad string"
  => False
 ```
 
@@ -120,7 +120,7 @@ False
 
 #Variables
 ##Declaring a variable
-The first time you want to use a variable, you must give it a name and value.
+
 ```python
 x = 1
 y = "baz"
@@ -161,12 +161,12 @@ else:
 
 #you can also only have an if case
 y = "foobar"
-if y.length < 12:
+if len(y) < 12:
   print("the condition is true")
  => the condition is true
 
 y = "foobar"
-if y.length > 12:
+if len(y) > 12:
   print("the condition is true")
  => <Nothing happens>
 ```
