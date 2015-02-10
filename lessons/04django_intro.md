@@ -138,7 +138,7 @@ Add a url which displays a random number.
 Hint:
 ```python
 from random import randint
-randint()
+randint(1, 10)
 ```
 will give you a random integer. Remember not to name the view the same name as
 anything else you have imported or defined!
