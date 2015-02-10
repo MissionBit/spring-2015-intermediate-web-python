@@ -127,7 +127,7 @@ def time(request):
     return HttpResponse("The time is " + datetime.now())
 ```
 
-Now you can restart the server with Ctrl-C and visit http://127.0.0.1/time/. You
+Now you can restart the server with Ctrl-C and visit http://127.0.0.1:8000/time/. You
 should see the time updated on every refresh. If it looks good, commit your work to the repo!
 
 Now take a shot at adding these URLs to your app:
