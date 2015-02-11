@@ -8,4 +8,4 @@ Class | Lessons
   1   | [Setup](https://github.com/MissionBit/spring-2015-intermediate-web-python/blob/master/lessons/00setup.md), [Terminal Intro](https://github.com/MissionBit/spring-2015-intermediate-web-python/blob/master/lessons/01terminal.md), [Python Intro](https://github.com/MissionBit/spring-2015-intermediate-web-python/blob/master/lessons/02python.md)
   2   | [Turtle Graphics](https://github.com/MissionBit/spring-2015-intermediate-web-python/blob/master/lessons/03turtle.md)
   3   | [Django Intro](https://github.com/MissionBit/spring-2015-intermediate-web-python/blob/master/lessons/04django_intro.md)
-  4   | [Django Templates](https://github.com/MissionBit/spring-2015-intermediate-web-python/blob/master/lessons/05django_templates.md), [Choose Your Own Adventure](https://github.com/MissionBit/spring-2015-intermediate-web-python/blob/master/lessons/06adventure.md)
+  4   | [Django Templates](https://github.com/MissionBit/spring-2015-intermediate-web-python/blob/master/lessons/05django_templates.md)

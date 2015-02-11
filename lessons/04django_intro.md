@@ -124,7 +124,7 @@ def hello(request):
     return HttpResponse("Hello world!")
 
 def time(request):
-    return HttpResponse("The time is " + datetime.now())
+    return HttpResponse("The time is {}".format(datetime.now()))
 ```
 
 Now you can restart the server with Ctrl-C and visit http://127.0.0.1:8000/time/. You
