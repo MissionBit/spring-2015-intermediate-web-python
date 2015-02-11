@@ -53,7 +53,7 @@ will be filled in later.
 
 In `urls.py`, add a pattern for `/hello_template/<YOURNAME>`:
 ```python
-url(r'^hello_template/(?P<yourname>.+)/$', 'buildup.views.hello_template', name='hello_template')
+url(r'^hello_template/(?P<yourname>\w+)/$', 'buildup.views.hello_template', name='hello_template')
 ```
 In `views.py`, we're going to be using the `render` function, so add a line at
 the top to import it:
