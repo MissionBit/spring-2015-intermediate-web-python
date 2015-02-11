@@ -11,14 +11,13 @@ looks like this:
 * A request comes in, and we try to match it to one of the patterns in `urls.py`.
 * We find the matching view for that pattern in `views.py` and respond with some text.
 
-We want a way to respond with files instead of text, turning our server into this:
+We want a way to respond with files instead of text. We can do
+this using templates, turning our server into this:
 ![Django stack 2](https://raw.githubusercontent.com/MissionBit/spring-2015-intermediate-web-python/master/img/django2.png)
-(Taken from http://littlegreenriver.com/weblog/2013/03/23/django-for-designers/)
 
 # Rendering Templates
-In Django, we can do this using templates. You can think of a template like
-a Mad-libs page. You have a series of blanks in your file that can be filled in later
-before giving the file back to the browser.
+You can think of a template like a Mad-libs page. You have a series of blanks in
+your file that can be filled in later before giving the file back to the browser.
 
 Let's try an example - first we have to add some settings. In `buildup/settings.py`,
 add the following lines so Django knows where to look for templates.

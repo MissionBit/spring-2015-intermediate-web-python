@@ -69,7 +69,9 @@ to "resolve" the URL and figure out what you're asking for. Once it knows
 what you're requesting, it returns a "view" which is how Django responds with data.
 In the Django world, a browser request would look
 something like this:
+
 ![Django stack 1](https://raw.githubusercontent.com/MissionBit/spring-2015-intermediate-web-python/master/img/django1.png)
+
 (Taken from http://littlegreenriver.com/weblog/2013/03/23/django-for-designers/)
 
 # Django URLs
