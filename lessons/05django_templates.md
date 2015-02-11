@@ -73,6 +73,9 @@ whose value is what you provided in the url, and a key "foobar" whose value is 1
 The `render` function will use the `hello.html` template and replace "yourname"
 and "foobar" in the template with the values you provided.
 
+If everything went well, you should see an HTML page when you visit
+http://127.0.0.1:8000/hello_template/myname/!
+
 # Add some other templates
 
 Modify your time, random, and say views to use templates - you'll want to create
