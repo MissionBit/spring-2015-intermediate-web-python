@@ -9,3 +9,4 @@ Class | Lessons
   2   | [Turtle Graphics](https://github.com/MissionBit/spring-2015-intermediate-web-python/blob/master/lessons/03turtle.md)
   3   | [Django Intro](https://github.com/MissionBit/spring-2015-intermediate-web-python/blob/master/lessons/04django_intro.md)
   4   | [Django Templates](https://github.com/MissionBit/spring-2015-intermediate-web-python/blob/master/lessons/05django_templates.md)
+  5   | [Django Models](https://github.com/MissionBit/spring-2015-intermediate-web-python/blob/master/lessons/06django_models.md)

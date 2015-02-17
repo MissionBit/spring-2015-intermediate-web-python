@@ -14,6 +14,7 @@ data that could be created from a template.
 The next step is adding some way to save data. We want to be able to have user
 accounts, save tweets, etc and have that information saved when we restart the
 server. We can solve that using models in Django, turning our server into this:
+
 ![Django stack 3](https://raw.githubusercontent.com/MissionBit/spring-2015-intermediate-web-python/master/img/django3.png)
 
 # Defining Models
