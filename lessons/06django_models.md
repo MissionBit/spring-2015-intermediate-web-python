@@ -120,7 +120,7 @@ called `all_facts`, and in `views.py`, import the `Fact` model and create the
 from buildup.models import Fact
 # your other views.py code is here...
 def all_facts(request):
-    return render(request, "all_facts.html", { "facts": Fact.object.all() })
+    return render(request, "all_facts.html", { "facts": Fact.objects.all() })
 ```
 Now add the corresponding template in `buildup/templates/all_facts.html`:
 ```html

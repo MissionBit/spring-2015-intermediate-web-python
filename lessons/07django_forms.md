@@ -72,14 +72,14 @@ And finally, let's add the template in `buildup/templates/new_fact.html`:
 </html>
 ```
 There's a couple things to note here:
- * Django has a `url` helper which you can use in templates - `{% url 'new_fact' %} will find the url named `new_fact` in `urls.py` and be replaced by the full url `/facts/new/`
+ * Django has a `url` helper which you can use in templates - `{% url 'new_fact' %}` will find the url named `new_fact` in `urls.py` and be replaced by the full url `/facts/new/`
  * The `<form>` tag has an "action", which specifies which url to send the data on submit
  * All HTTP requests have a "verb" which tells the server what you want to do with the url. The convention is to use the verb "GET" when you want to view something, and "POST" when you want to create something new.
     * The `<form>` tag uses the "POST" method because we want to tell the server to create a new fact based on the data from the form.
  * Django will automatically create all the necessary input fields when you say `{{ form }}`
  * The `csrf_token` is used to verify that the form with `action=/facts/new/` originates from the website itself, and not someone else. Without this, a hacker could recreate your form on their own website and submit any data they wanted to your server. You can learn more about this hackery and how to prevent it here: http://www.squarefree.com/securitytips/web-developers.html#CSRF
 
-If you start up the server `python manage.py runserver` and navigate to `http://127.0.0.1:8000/facts/new/`,
+If you start up the server `python manage.py runserver` and navigate to http://127.0.0.1:8000/facts/new/,
 you should see a form! When you try to submit it, you'll see that we still have to handle saving the Fact!
 
 # Validating Forms
@@ -99,6 +99,10 @@ After the `else:`, we can add the following:
             return render(request, "new_fact.html", { "form": form })
 ```
 
+Django will automatically create a form from the `POST` data when you say `FactForm(request.POST)`,
+and then we can check the form to see if everything looks good before saving. If not,
+we can send the form back with errors.
+
 Now we're a little bit closer! If you try to create a fact and you leave a field blank,
 you will get the form back with some errors. If you submit valid data, you'll
 be redirected to the 'all_facts' page, but your fact isn't actually saved!
@@ -107,9 +111,9 @@ be redirected to the 'all_facts' page, but your fact isn't actually saved!
 Now you want to replace the final `TODO` with your code for saving the Fact. You
 will be able to create and save Facts just as you did in the shell last lesson!
 
-Hint: You can retrieve the data from the form with `form.cleaned_data['text']`
+Hint: You can retrieve the data from the form with `form.cleaned_data['text']` and `form.cleaned_data['author']`
 
-Remember to add a created_data since the form doesn't do it for you!
+Remember to add `created_date` to your `Fact` since the form doesn't do it for you!
 
 # Extras
 If you're looking to add some more to your Facts app, here's some more things to try:
@@ -129,4 +133,4 @@ Hint: You can use `Fact.objects.order_by('?')[0]` to retrieve a random Fact.
 Add a `/facts/<AUTHOR>/` url which retrieves all the facts from a particular
 author.
 
-Hint: You can use `Fact.objects.filter(author='AUTHOR')` to retrieve only Facts by an author
+Hint: You can use `Fact.objects.filter(author='AUTHOR')` to retrieve only Facts by a certain author
