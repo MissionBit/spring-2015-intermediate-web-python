@@ -56,15 +56,10 @@ So far we've been using sqlite as our database, but it's a bad idea to use it in
 production for a number of reasons. Luckily, Heroku apps already come with a
 database called Postgres. Heroku encourages users to store all of their app's
 configuration in environment variables, and that's what they've done with the
-Postgres connection information:
-
-```bash
-$ heroku config:get DATABASE_URL
-postgres://user3123:passkja83kd8@ec2-117-21-174-214.compute-1.amazonaws.com:6212/db982398
-```
-
-But we need to tell Django how to use `DATABASE_URL` to connect to our database.
-Open up `requirements.txt` and add:
+Postgres connection information. The connection string is stored in an
+environment variable called `DATABASE_URL`. But we need to tell Django how to
+use `DATABASE_URL` to connect to our database. Open up `requirements.txt` and
+add:
 
 ```python
 dj-database-url==0.3.0
