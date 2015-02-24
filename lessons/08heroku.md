@@ -66,11 +66,7 @@ dj-database-url==0.3.0
 psycopg2==2.5.4
 ```
 
-to the end. Then `pip install` your requirements again:
-
-```bash
-$ pip install -r requirements.txt
-```
+to the end.
 
 Now open `buildup/settings.py`, find the lines that assign the `DATABASES`
 setting, and replace them with a version that uses `dj-database-url`:
