@@ -64,8 +64,14 @@ postgres://user3123:passkja83kd8@ec2-117-21-174-214.compute-1.amazonaws.com:6212
 ```
 
 But we need to tell Django how to use `DATABASE_URL` to connect to our database.
-Open up `requirements.txt` and add `dj-database-url==0.3.0` to the end. Then
-`pip install` your requirements again:
+Open up `requirements.txt` and add:
+
+```python
+dj-database-url==0.3.0
+psycopg2==2.5.4
+```
+
+to the end. Then `pip install` your requirements again:
 
 ```bash
 $ pip install -r requirements.txt
@@ -91,7 +97,7 @@ commands remotely in the cloud. Let's use it to migrate our Heroku Postgres
 database:
 
 ```bash
-$ herkou run python manage.py migrate
+$ heroku run python manage.py migrate
 ```
 
 We can use `heroku run` to run any command we want. For instance, if we wanted
