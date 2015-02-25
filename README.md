@@ -11,3 +11,4 @@ Class | Lessons
   4   | [Django Templates](https://github.com/MissionBit/spring-2015-intermediate-web-python/blob/master/lessons/05django_templates.md)
   5   | [Django Models](https://github.com/MissionBit/spring-2015-intermediate-web-python/blob/master/lessons/06django_models.md)
   6   | [Django Forms](https://github.com/MissionBit/spring-2015-intermediate-web-python/blob/master/lessons/07django_forms.md)
+  8   | [Django Authentication](https://github.com/MissionBit/spring-2015-intermediate-web-python/blob/master/lessons/08django_auth.md)
