@@ -37,7 +37,7 @@ for logging in and out.
 
 Now we need to tell Django to create the User model for us. Run
 ```bash
-python manage.py syncdb
+foreman run python manage.py syncdb
 ```
 and create a superuser with a username, email and password when it asks.
 
@@ -129,7 +129,7 @@ rm -r buildup/migrations
 ```
 and then we can initialize the database with the new model definitions:
 ```bash
-python manage.py syncdb
+foreman run python manage.py syncdb
 ```
 
 ## Saving Facts
@@ -143,7 +143,7 @@ Once this is complete, you should be able to create facts after logging in with 
 
 # Creating New Users
 Since users are just Django models, we can create new ones in the Django shell
-just like we did for Facts. Enter the shell with `python manage.py shell`
+just like we did for Facts. Enter the shell with `foreman run python manage.py shell`
 and try to create a new user:
 ```python
 from django.contrib.auth.models import User
