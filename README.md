@@ -12,4 +12,4 @@ Class | Lessons
   5   | [Django Models](lessons/06django_models.md)
   6   | [Django Forms](lessons/07django_forms.md)
   7   | [Heroku](lessons/08heroku.md)
-  8   | [Django Authentication](lessons/08django_auth.md)
+  8   | [Django Authentication](lessons/09django_auth.md)
