@@ -13,3 +13,4 @@ Class | Lessons
   6   | [Django Forms](lessons/07django_forms.md)
   7   | [Heroku](lessons/08heroku.md)
   8   | [Django Authentication](lessons/09django_auth.md)
+  9   | [More Templates and Static Files](lessons/10templates_and_static_files.md)
