@@ -14,3 +14,4 @@ Class | Lessons
   7   | [Heroku](lessons/08heroku.md)
   8   | [Django Authentication](lessons/09django_auth.md)
   9   | [More Templates and Static Files](lessons/10templates_and_static_files.md)
+  10  | [Static Files on Heroku](lessons/11heroku_static_files.md), Start Brainstorming Project Ideas!
