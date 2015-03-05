@@ -12,6 +12,7 @@ STATICFILES_DIRS = (
 STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
 ```
 We'll also need to modify `buildup/wsgi.py` to look like this:
+```python
 import os
 from django.core.wsgi import get_wsgi_application
 os.environ.setdefault("DJANGO_SETTINGS_MODULE", "buildup.settings")
