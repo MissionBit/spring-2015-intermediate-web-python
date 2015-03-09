@@ -82,7 +82,7 @@ which needs to be served to the browser, but these files don't change very often
 For these "static" files, we can serve them directly to the user without any changes.
 Django has a `staticfiles` application which will automatically do this for us -
 any files placed in a particular folder (we'll use `buildup/static`) will be
-available at http://127.0.0.1/static.
+available at http://127.0.0.1:8000/static.
 
 ## Configuring Staticfiles
 In `buildup/settings.py`, we need to add `"django.contrib.staticfiles"` to the
