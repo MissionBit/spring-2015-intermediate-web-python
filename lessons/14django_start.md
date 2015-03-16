@@ -84,7 +84,7 @@ Now we need to create the database named `<PROJECTNAME>` in Postgres. In your
 toolbar, there should be an elephant icon - click on it and go to `Open psql`.
 Once you are in the `psql` shell, type the following:
 ```sql
-CREATE DATABASE <PROJECTNAME>
+CREATE DATABASE <PROJECTNAME>;
 ```
 
 Now you can run `foreman run python manage.py syncdb` to create all the necessary
